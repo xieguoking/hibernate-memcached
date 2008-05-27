@@ -1,4 +1,5 @@
 #summary How to build hibernate-memcached from source.
+#labels Featured
 
 =Get the code=
 Check out the code from Subversion.
