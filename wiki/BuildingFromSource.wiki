@@ -2,16 +2,17 @@
 
 =Get the code=
 Check out the code from Subversion.
-svn checkout http://hibernate-memcached.googlecode.com/svn/trunk/hibernate-memcached
+
+{{{svn checkout http://hibernate-memcached.googlecode.com/svn/trunk/hibernate-memcached}}}
 
 =Install Maven 2=
 If you already have maven installed you can skip this. If you need maven2 you can get it from http://maven.apache.org/ or I highly recommend using the Don Brown fork, maven 2.0.8-db. Don Brown got fed up with some of the crap Maven2 was doing and forked it, and I dig it. http://people.apache.org/~mrdon/maven-db/
 Extract Maven and add it to your path so that you can run mvn from the command line. If you can't figure this out, you're on your own.
 
 =Build with Maven 2=
-mvn install
+{{{mvn install}}}
 
-Please note that the unit tests expect to find a single memcached running at localhost:11211. If one is not running the unit tests will fail. To get around this if necessary run "mvn install -Dmaven.test.skip=true".
+Please note that the unit tests expect to find a single memcached running at localhost:11211. If one is not running the unit tests will fail. To get around this if necessary run {{{mvn install -Dmaven.test.skip=true}}}.
 
 =The Future...=
 In the future I'll move this source code to git, and I'll build it with buildr or gant. For now, the instructions above are the way to go.
