@@ -1,0 +1,20 @@
+package com.googlecode.hibernate.memcached
+/**
+ * DOCUMENT ME!
+ * @author Ray Krueger
+ */
+abstract class BaseTestCase extends groovy.util.GroovyTestCase {
+
+    static {
+        LoggingConfig.initializeLogging()
+    }
+
+    void resetLogging() {
+        LoggingConfig.initializeLogging()
+    }
+
+    void setLogLevel(String level) {
+        LoggingConfig.initializeLogging(level)
+    }
+
+}
