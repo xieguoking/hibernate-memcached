@@ -1,0 +1,24 @@
+#summary How to include hibernate-memcached in your Maven build
+#labels Featured
+
+= Repository =
+Add the following Repository to your pom.xml
+{{{
+<repository>
+    <id>hibernate-memcached</id>
+    <name>hibernate-memcached</name>
+    <url>http://raykrueger.googlecode.com/svn/repository</url>
+</repository>
+}}}
+
+Once I release a 1.0 I'll try to have it uploaded to the main Maven repository.
+
+= Dependency =
+Your dependency on hibernate-memcached will be...
+{{{
+<dependency>
+    <groupId>com.googlecode</groupId>
+    <artifactId>hibernate-memcached</artifactId>
+    <version>0.3</version>
+</dependency>
+}}}
