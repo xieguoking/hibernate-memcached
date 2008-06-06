@@ -6,10 +6,10 @@ If you are using Maven2 for your application build you can follow the instructio
 
 You'll need...
   * hibernate-memcached-<version>.jar
-  * memcached-2.1.jar
-  * spy-2.4.jar
-  * slf4j-1.5.0.jar
-  * An slf4j implementation for your preferred logging framework. For log4j you can use slf4j-log4j12-1.5.0.jar.
+  * [http://spymemcached.googlecode.com/files/memcached-2.1.jar memcached-2.1.jar]
+  * [http://bleu.west.spy.net/~dustin/repo/spy/jars/spy-2.4.jar spy-2.4.jar]
+  * [http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.5.0/slf4j-api-1.5.0.jar slf4j-1.5.0.jar]
+  * An slf4j implementation for your preferred logging framework. For log4j you can use [http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.5.0/slf4j-log4j12-1.5.0.jar slf4j-log4j12-1.5.0.jar].
 
 == Configuring Hibernate ==
 The first thing to do is to tell hibernate which cache provider you'd like to use, and to enable the second level cache.
