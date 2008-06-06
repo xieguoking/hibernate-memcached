@@ -22,7 +22,7 @@ The cache wide settings all have defaults can mostly be overwritten at a cache-r
 || *Property* || *Default* || *Description* || 
 || hibernate.memcached.servers || localhost:11211 || Space delimited list of memcached instances in host:port format || 
 || hibernate.memcached.cacheTimeSeconds || 300 || The default number of seconds items should be cached. Can be overriden at the regon level. || 
-|| hibernate.memcached.keyStrategy || !HashCodeKeyStrategy || Sets the strategy class to to use for generating cache keys. Must provide a class name that implements KeyStrategy || 
+|| hibernate.memcached.keyStrategy || !HashCodeKeyStrategy || Sets the strategy class to to use for generating cache keys. Must provide a class name that implements !KeyStrategy || 
 || hibernate.memcached.readBufferSize || !DefaultConnectionFactory.DEFAULT_READ_BUFFER_SIZE || The read buffer size for each server connection from this factory || 
 || hibernate.memcached.operationQueueLength || !DefaultConnectionFactory.DEFAULT_OP_QUEUE_LEN || Maximum length of the operation queue returned by this connection factory || 
 || hibernate.memcached.operationTimeout || !DefaultConnectionFactory.DEFAULT_OPERATION_TIMEOUT || Default operation timeout in milliseconds || 
