@@ -1,8 +1,8 @@
-#summary How to configure hibernate-memcached
+#summary How to configure hibernate-memcached 0.6
 #labels Featured
 
 == Adding hibernate-memcached to your application ==
-If you are using Maven2 for your application build you can follow the instructions onthe  MavenRepository page. For those that aren't using Maven2 you'll need to collect a few simple jars for yourself. I am going to assume you already have hibenrnate3 setup before you came here.
+If you are using Maven2 for your application build you can follow the instructions on the  MavenRepository page. For those that aren't using Maven2 you'll need to collect a few simple jars for yourself. I am going to assume you already have hibenrnate3 setup before you came here.
 
 You'll need...
   * hibernate-memcached-<version>.jar
