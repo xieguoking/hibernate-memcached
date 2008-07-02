@@ -14,7 +14,7 @@ You'll need...
 
 == Configuring Hibernate ==
 The first thing to do is to tell hibernate which cache provider you'd like to use, and to enable the second level cache.
-||hibernate.cache.hibernate.cache.provider_class||com.googlecode.hibernate.memcached.!MemcachedCacheProvider||
+||hibernate.cache.provider_class||com.googlecode.hibernate.memcached.!MemcachedCacheProvider||
 
 !Now you can start setting up the hibernate-memcached specific properties. The hibernate-memcached properties are divided into two categories; cache-wide settings and cache-region settings.
 
