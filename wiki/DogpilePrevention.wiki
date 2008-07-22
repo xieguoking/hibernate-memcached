@@ -1,4 +1,5 @@
 #summary Don't let your application dogpile your database
+#labels Featured
 
 = What is a dogpile? =
 Let's say you have 50 instances of your application running. Each instance is using 200 threads to process requests. Your probably not using 200 threads actively, so let's call it 100 active threads `*` 50 instances. That means you could be handling 500 simultaneous requests. Now let's say that you have a query that is very heavily used, maybe it's data for the home page, maybe it's data for a stock ticker bar, whatever. You, like a good engineer, are caching that data using memcached to avoid pounding on your database.
