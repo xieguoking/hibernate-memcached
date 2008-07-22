@@ -18,8 +18,3 @@ When the _hibernate.memcached.dogpilePrevention_ property is set to _true_ hiber
 || hibernate.memcached.dogpilePrevention.expirationFactor || integer || 2 ||
 
 Dogpile prevention is obviously disabled by default, enable it by setting hibernate.memcached.dogpilePrevention to true. The expirationFactor is used to multiply the normal cacheSeconds when storing the "real" data. The dogpile token is stored for the normal amount of time as specified by the cacheSeconds property in the [Configuration] page.
-
-The dogpile prevention feature can be configured at a cache-region level as well...
-|| *Property* || *Type* || *Default* ||
-|| hibernate.memcached.<CACHE_REGION>.dogpilePrevention || boolean || false ||
-|| hibernate.memcached.<CACHE_REGION>.dogpilePrevention.expirationFactor || integer || 2 ||
