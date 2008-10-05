@@ -1,0 +1,7 @@
+#summary How to get the source.
+
+This code is hosted in git and can be checked out using the following command:
+
+git clone git://github.com/raykrueger/hibernate-memcached.git
+
+You can browse or fork the repo at github. 
