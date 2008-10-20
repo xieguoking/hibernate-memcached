@@ -1,4 +1,4 @@
-#summary How to configure hibernate-memcached 0.6
+#summary How to configure hibernate-memcached
 #labels Featured
 
 == Adding hibernate-memcached to your application ==
