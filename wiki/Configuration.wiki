@@ -25,7 +25,7 @@ Using just the property above you get basic entity caching by default. The hiber
 The cache wide settings all have defaults can mostly be overwritten at a cache-region level.
 || *Property* || *Default* || *Description* || 
 || hibernate.memcached.servers || localhost:11211 || Space delimited list of memcached instances in host:port format || 
-|| hibernate.memcached.cacheTimeSeconds || 300 || The default number of seconds items should be cached. Can be overriden at the regon level. || 
+|| hibernate.memcached.cacheTimeSeconds || 300 || The default number of seconds items should be cached. Can be overriden at the region level. || 
 || hibernate.memcached.keyStrategy || !HashCodeKeyStrategy || Sets the strategy class to to use for generating cache keys. Must provide a class name that implements !KeyStrategy || 
 || hibernate.memcached.readBufferSize || !DefaultConnectionFactory.DEFAULT_READ_BUFFER_SIZE || The read buffer size for each server connection from this factory || 
 || hibernate.memcached.operationQueueLength || !DefaultConnectionFactory.DEFAULT_OP_QUEUE_LEN || Maximum length of the operation queue returned by this connection factory || 
@@ -34,7 +34,7 @@ The cache wide settings all have defaults can mostly be overwritten at a cache-r
 || hibernate.memcached.clearSupported || false || Enables support for the !MemcachedCache.clear() method for all cache regions. The way clear is implemented for memcached is expensive and adds overhead to all get/set operations. It is not recommended for production use. || 
 
 === Cache Region Settings ===
-Cache regon properties are set by giving your cached data a "region name" in hibernate. You can tune the !MemcachedCache instance for your region using the following properties. These properties essentially override the cache-wide properties above.
+Cache region properties are set by giving your cached data a "region name" in hibernate. You can tune the !MemcachedCache instance for your region using the following properties. These properties essentially override the cache-wide properties above.
 
 || *Property* || *Default* || *Description* || 
 || hibernate.memcached.[region-name].cacheTimeSeconds || none, see hibernate.memcached.cacheTimeSeconds || Set the cache time for this cache region, overriding the cache-wide setting. || 
