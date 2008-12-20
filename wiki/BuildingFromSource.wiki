@@ -2,9 +2,10 @@
 #labels Featured
 
 =Get the code=
-Check out the code from Subversion.
+Get the code from [http://git.or.cz/ Git]
 
-{{{svn checkout http://hibernate-memcached.googlecode.com/svn/trunk/hibernate-memcached}}}
+{{{git clone git://github.com/raykrueger/hibernate-memcached.git}}}
+Alternatively, visit my [http://github.com/raykrueger/hibernate-memcached/tree/master repository at git hub] and download the source in zip or tar.gz form.
 
 =Install Maven 2=
 If you already have maven installed you can skip this. If you need maven2 you can get it from http://maven.apache.org/ or I highly recommend using the Don Brown fork, maven 2.0.8-db. Don Brown got fed up with some of the crap Maven2 was doing and forked it, and I dig it. http://people.apache.org/~mrdon/maven-db/
