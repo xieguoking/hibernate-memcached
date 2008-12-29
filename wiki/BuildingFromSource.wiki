@@ -15,6 +15,3 @@ Extract Maven and add it to your path so that you can run mvn from the command l
 {{{mvn install}}}
 
 Please note that the unit tests expect to find a single memcached running at localhost:11211. If one is not running the unit tests will fail. To get around this if necessary run {{{mvn install -Dmaven.test.skip=true}}}.
-
-=The Future...=
-In the future I'll move this source code to git, and I'll build it with buildr or gant. For now, the instructions above are the way to go.
