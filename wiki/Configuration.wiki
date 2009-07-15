@@ -28,7 +28,8 @@ The cache wide settings all have defaults can mostly be overwritten at a cache-r
 || hibernate.memcached.readBufferSize || !DefaultConnectionFactory.DEFAULT_READ_BUFFER_SIZE || The read buffer size for each server connection from this factory || 
 || hibernate.memcached.operationQueueLength || !DefaultConnectionFactory.DEFAULT_OP_QUEUE_LEN || Maximum length of the operation queue returned by this connection factory || 
 || hibernate.memcached.operationTimeout || !DefaultConnectionFactory.DEFAULT_OPERATION_TIMEOUT || Default operation timeout in milliseconds || 
-|| hibernate.memcached.hashAlgorithm || !HashAlgorithm.KETAMA_HASH || Which hash algorithm to use when adding items to the cache. Default !HashAlgorithm.NATIVE_HASH || 
+|| hibernate.memcached.hashAlgorithm || !HashAlgorithm.NATIVE_HASH || Which hash algorithm to use when adding items to the cache. Prior to hibernate-memcached 1.2 this defaulted to !HashAlgorithm.KETAMA_HASH ||
+|| hibernate.memcached.connectionFactory || DefaultConnectionFactory || The "simple" name of the ConnectionFactory class to use from spymemcached. Must be one of DefaultConnectionFactory, KetamaConnectionFactory, or BinaryConnectionFactory || 
 || hibernate.memcached.clearSupported || false || Enables support for the !MemcachedCache.clear() method for all cache regions. The way clear is implemented for memcached is expensive and adds overhead to all get/set operations. It is not recommended for production use. || 
 
 === Cache Region Settings ===
@@ -36,6 +37,6 @@ Cache region properties are set by giving your cached data a "region name" in hi
 *Note:* that the square brackets are there to denote the text you need to replace, they are not part of the property name.
 
 || *Property* || *Default* || *Description* || 
-|| hibernate.memcached.[region-name].cacheTimeSeconds || none, see hibernate.memcached.cacheTimeSeconds || Set the cache time for this cache region, overriding the cache-wide setting. || 
-|| hibernate.memcached.[region-name].keyStrategy || none, see hibernate.memcached.keyStrategy || Overrides the strategy class to to use for generating cache keys in this cache region. Must provide a class name that implements !KeyStrategy || 
-|| hibernate.memcached.[region-name].clearSupported || none, see hibernate.memcached.clearSupported || Enables clear() operations for this cache region only. Again, the clear operation incurs cost on every get/set operation. || 
+|| hibernate.memcached.YOUR_REGION_NAME.cacheTimeSeconds || none, see hibernate.memcached.cacheTimeSeconds || Set the cache time for this cache region, overriding the cache-wide setting. || 
+|| hibernate.memcached.YOUR_REGION_NAME.keyStrategy || none, see hibernate.memcached.keyStrategy || Overrides the strategy class to to use for generating cache keys in this cache region. Must provide a class name that implements !KeyStrategy || 
+|| hibernate.memcached.YOUR_REGION_NAME.clearSupported || none, see hibernate.memcached.clearSupported || Enables clear() operations for this cache region only. Again, the clear operation incurs cost on every get/set operation. || 
