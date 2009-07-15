@@ -29,7 +29,7 @@ The cache wide settings all have defaults can mostly be overwritten at a cache-r
 || hibernate.memcached.operationQueueLength || !DefaultConnectionFactory.DEFAULT_OP_QUEUE_LEN || Maximum length of the operation queue returned by this connection factory || 
 || hibernate.memcached.operationTimeout || !DefaultConnectionFactory.DEFAULT_OPERATION_TIMEOUT || Default operation timeout in milliseconds || 
 || hibernate.memcached.hashAlgorithm || !HashAlgorithm.NATIVE_HASH || Which hash algorithm to use when adding items to the cache. Prior to hibernate-memcached 1.2 this defaulted to !HashAlgorithm.KETAMA_HASH ||
-|| hibernate.memcached.connectionFactory || DefaultConnectionFactory || The "simple" name of the ConnectionFactory class to use from spymemcached. Must be one of DefaultConnectionFactory, KetamaConnectionFactory, or BinaryConnectionFactory || 
+|| (1.2+) hibernate.memcached.connectionFactory || DefaultConnectionFactory || The "simple" name of the ConnectionFactory class to use from spymemcached. Must be one of DefaultConnectionFactory, KetamaConnectionFactory, or BinaryConnectionFactory || 
 || hibernate.memcached.clearSupported || false || Enables support for the !MemcachedCache.clear() method for all cache regions. The way clear is implemented for memcached is expensive and adds overhead to all get/set operations. It is not recommended for production use. || 
 
 === Cache Region Settings ===
